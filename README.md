@@ -2,8 +2,8 @@
 A series of macros that enable efficient cropping, segmentation and analysis of nuclei within .lif files. 
 Capable of processing over 1000 files in 3 hours. 
 
--For labs that work with nuclear (LLPS) bodies- 
--This utility enables lab work with nuclei to be more centered around slide preparation and image acquisition, minimising work related to image analysis-
+---For labs that work with nuclear (LLPS) bodies---
+---This utility enables lab work with nuclei to be more centered around slide preparation and image acquisition, minimising work related to image analysis---
 
 Currently works with thwo channels, one of which (C2) should be DAPI.
 This work uses Coilin as C1, but it can used with any other nuclear protein that forms LLPS. 
@@ -46,9 +46,8 @@ CREATE 4 folders
 4) DATA folder (e.g., "nuc_remdata") for "raw" data obtained by MACRO III <**** SET THIS AS WORKING DIRECTORY IN Rstudio
 
 THEN, step by step:
-1) OPEN FIJI (ImageJ) and execute MAIN_MACRO. Choose the corresponding directories when a specific window pops up for this.
-   (OR execute MACRO I, MACRO II, MACRO III individually)
-   =================> IMPORTANT! for MAIN_MACRO please specify directory of macros I,II,II <=================
+1) OPEN FIJI (ImageJ) and execute MAIN_MACRO. Choose the corresponding directories when a specific window pops up for this. (OR execute MACRO I, MACRO II, MACRO III individually)
+=================> IMPORTANT! for MAIN_MACRO please specify directory of macros I,II,II <=================
 
     The most Rate limiting step in this procces is MACRO III, since data extraction is a slow process, especialy co-localisation analysis.
     PROGRESS for MACRO III is monitored as a percentage value in the log window.
