@@ -84,7 +84,7 @@ Distribution of specific LLPS bodies (coilin+ bodies) within each nucleus by vol
 
 _Image 2. Violin graphs, that show volume distribution (kernel dendity estimate) of individual coilin+ body volumes within each nucleus._
 
-Surface are contact (surface co-localisation) difference between two sained regions: 
+Surface are contact (surface co-localisation) difference between two regions: 
 
 <img src="https://github.com/user-attachments/assets/f5153db0-7d4b-49a6-bcb9-976548e4e013" width="450">
 
