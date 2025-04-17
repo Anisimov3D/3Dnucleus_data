@@ -10,10 +10,10 @@ Currently works with two channels, where C2 should be DAPI.
 This work uses Coilin as C1, but it can used with any other nuclear protein that forms LLPS. 
 
 
-__NB!__ THE nucleus identification is not accurate yet, if there is dirt or other nuclei close to each other, the outside signal can be interperted as a signal inside the nucleus.
-I am currently working on solving this issue.
+__NB!__ The nucleus identification and isolation is not accurate yet. If there is non-specific hybridisation or close nuclei contact, the outside signal can be interperted as a signal inside the nucleus.
+I am currently working on solving this issue using masks.
 
-__NB!__ The 3D segmentation is complicated and not fully automatic yet, it needs a configurable threshold value. Will be fixed in the future for a more scientific approach. 
+__NB!__ The 3D segmentation is complicated and not fully automatic yet. it needs a configurable threshold value. Will be fixed in the future for a more scientific approach. 
 
 This repository contains code for:
 1) Identifying and cropping single nuclei within the .lif (or other stack file) image
