@@ -25,7 +25,7 @@ Current workflow is divided by:
 2) Rstudio macros (located in Rstudio_MACROS) for data cleaning and polishing
 3) Rstudio graphs (located in Rstudio_MACROS) for complimentary statistical analysis and graphical interpretation of data
 
-Schematic interpertation of the workflow:
+Simple, schematic interpertation of the workflow:
 
 <img src="https://github.com/user-attachments/assets/644c2e43-ca8e-4f0a-8952-e350a90367f8" width="473">
 
