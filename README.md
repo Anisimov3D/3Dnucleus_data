@@ -6,7 +6,7 @@ _---For labs that work with nuclear (LLPS) bodies---_
 
 _---This utility enables lab work with nuclei to be more centered around slide preparation and image acquisition---_
 
-Currently works with two channels, one of which (C2) should be DAPI.
+Currently works with two channels, where C2 should be DAPI.
 This work uses Coilin as C1, but it can used with any other nuclear protein that forms LLPS. 
 
 
