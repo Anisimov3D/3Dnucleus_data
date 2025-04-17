@@ -23,7 +23,7 @@ This repository contains code for:
 Current workflow is divided by:
 1) ImageJ macros (located in ImageJ_MACROS) for dealing with images and data extraction
 2) Rstudio macros (located in Rstudio_MACROS) for data cleaning and polishing
-3) Rstudio graphs (located in Rstudio_MACROS) for complimentary statistical analysis and graphical interpretation of data
+3) Rstudio graphs (located in Rstudio_GRAPHS) for complimentary statistical analysis and graphical interpretation of data
 
 Simple, schematic interpertation of the workflow:
 
