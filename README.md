@@ -29,8 +29,9 @@ Schematic interpertation of workflow:
 
 <img src="https://github.com/user-attachments/assets/644c2e43-ca8e-4f0a-8952-e350a90367f8" width="473">
 
-Image 1. Left side: MAIN_MACRO workflow, that currently produces data 2 (Co-locolisation, C) and data 3 (Volume and intensity, M+Q).
-Right top corner: primary unmodified image. Right bottom corner: Segmented and analysed objects: $${\color{blue}Nucleus-shape}$$, . 
+_Image 1. Left side: MAIN_MACRO workflow, that currently produces data 2 (Co-locolisation, C) and data 3 (Volume and intensity, M+Q).
+Right top corner: primary unmodified image. 
+Right bottom corner: Segmented and analysed objects:_ $${\color{blue}Nucleus \space \color{blue}shape, \space \color{red}DAPI, \space \color{green}coilin }$$ _(or any other channel 1)._
 
 The code obtains following data:
 1) Number of nucleus (can be modified regarding the number of starting nucleus)
@@ -74,3 +75,25 @@ OPEN Rstudio and execute (control+shift+S):
 2) MACRO V for cleaning C data (results in final_of_C)
 
 DONE! now the final dataframe in the Rstudio environment be saved, or statistically analysied using the corresponding macros in "Rstudio_GRAPHS" folder.
+
+__Examles of graphs produced by current workflow:__
+
+Distribution of specific LLPS bodies (coilin+ bodies) within each nucleus by volume.
+
+<img src="https://github.com/user-attachments/assets/f2511d21-ff17-43b6-aa13-bb3a388e3bac" width="900">
+
+_Image 2. Violin graphs, that show volume distribution (kernel dendity estimate) of individual coilin+ body volumes within each nucleus._
+
+Surface are contact (surface co-localisation) difference between two sained regions: 
+
+<img src="https://github.com/user-attachments/assets/f5153db0-7d4b-49a6-bcb9-976548e4e013" width="450">
+
+
+_Image 3. Boxplot graphs, that show different level of contact between DAPI and coilin+ regions._
+
+
+
+
+
+
+
