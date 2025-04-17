@@ -10,17 +10,17 @@ Currently works with two channels, one of which (C2) should be DAPI.
 This work uses Coilin as C1, but it can used with any other nuclear protein that forms LLPS. 
 
 
-NB! THE nucleus identification is not accurate yet, if there is dirt or other nuclei close to each other, the outside signal can be interperted as a signal inside the nucleus.
+__NB!__ THE nucleus identification is not accurate yet, if there is dirt or other nuclei close to each other, the outside signal can be interperted as a signal inside the nucleus.
 I am currently working on solving this issue.
 
-NB! The 3D segmentation is complicated and not fully automatic yet, it needs a configurable threshold value. Will be fixed in the future for a more scientific approach. 
+__NB!__ The 3D segmentation is complicated and not fully automatic yet, it needs a configurable threshold value. Will be fixed in the future for a more scientific approach. 
 
 This repository contains code for:
-1) Identifying and cropping single nuclei within the .1if (or other stack file) image
+1) Identifying and cropping single nuclei within the .lif (or other stack file) image
 2) Segmentation of nuclear objects, identified by two channels (one of them must be DAPI)
 3) Extraction of CLEAN data and parameters of objects within the nucleus
 
-For this, the workflow is divided by:
+Current workflow is divided by:
 1) ImageJ macros (located in ImageJ_MACROS) for dealing with images and data extraction
 2) Rstudio macros (located in Rstudio_MACROS) for data cleaning and polishing
 3) Rstudio graphs (located in Rstudio_MACROS) for complimentary statistical analysis and graphical interpretation of data
@@ -46,7 +46,7 @@ __-THE WORKFLOW-__
 ==============================================================
 
 For macros to work, you need
-1) FIJI (ImageJ) with downloaded "3D ImageJ suite plugin" (needs additional plugins to work, read on how to download 3D suite here):
+1) FIJI (ImageJ) with downloaded "3D ImageJ suite plugin" (needs additional plugins to work, read on how to download 3D suite here: ):
 2) Rstudio
 
 __CREATE 4 folders__
@@ -58,7 +58,7 @@ __CREATE 4 folders__
 __RUN MACROS for ImageJ__
 1) OPEN FIJI (ImageJ) and execute MAIN_MACRO. Choose the corresponding directories when a specific window pops up for this. (OR execute MACRO I, MACRO II, MACRO III individually)
 
-=========> IMPORTANT! for MAIN_MACRO please specify directory of macros I,II,II <=========
+=========> IMPORTANT! for MAIN_MACRO please specify directory of macros I,II,III <=========
 
 The most Rate limiting step in this procces is MACRO III, since data extraction is a slow process, especialy co-localisation analysis.
 PROGRESS for MACRO III is monitored as a percentage value in the log window.
