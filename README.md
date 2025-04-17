@@ -92,7 +92,7 @@ _Image 3. Boxplot graphs, that show different level of contact between DAPI and 
 
 Interpretation of the graph above:  
 
-![Graph_interpertation_fv](https://github.com/user-attachments/assets/9aae6a52-761d-4b52-978f-25268c73df9f)
+![Graph_interpertation_wh](https://github.com/user-attachments/assets/72e6e0b4-862f-4a47-9582-9cff67691a76)
 
 _Image 4. A demonstration of contact surface area difference between an internalised object (C1) and an external "surrounding" object (C2). A negative difference of SA between C1 and C2 (on Image 3.) implies that C1 (coilin+ region) is mostly internalised within the C2 (DAPI region)._
 
