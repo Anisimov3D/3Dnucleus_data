@@ -50,7 +50,7 @@ For macros to work, you need
 2) Rstudio
 
 __CREATE 4 folders__
-1) Primary image folder (e.g., "PIM") for primary input of .liif files <==== PUT YOUR .lif FILES FOR PROCESSING HERE
+1) Primary image folder (e.g., "PIM") for primary input of .lif files <==== PUT YOUR .lif FILES FOR PROCESSING HERE
 2) Cropped nuclei folder (e.g., "nuc_cr") for individual, numbered nuclei (.tif) obtained by MACRO I
 3) Segmented objects folder (e.g., "nuc_cr") for segmented objects obtained by MACRO II
 4) DATA folder (e.g., "nuc_remdata") for "raw" data obtained by MACRO III <=== SET THIS AS WORKING DIRECTORY IN Rstudio
