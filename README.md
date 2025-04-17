@@ -30,8 +30,8 @@ Schematic interpertation of the workflow:
 <img src="https://github.com/user-attachments/assets/644c2e43-ca8e-4f0a-8952-e350a90367f8" width="473">
 
 _Image 1. Left side: MAIN_MACRO workflow, that currently produces data 2 (Co-locolisation, C) and data 3 (Volume and intensity, M+Q).
-Right top corner: primary unmodified image. 
-Right bottom corner: Segmented and analysed objects:_ $${\color{blue}nucleus \space \color{blue}"shape", \space \color{red}DAPI, \space \color{green}coilin }$$ _(or any other channel 1)._
+Top right corner: primary unmodified image. 
+Bottom right corner: Segmented and analysed objects:_ $${\color{blue}nucleus \space \color{blue}"shape", \space \color{red}DAPI, \space \color{green}coilin }$$ _(or any other channel 1)._
 
 The code obtains following data:
 1) Number of nucleus (can be modified regarding the number of starting nucleus)
