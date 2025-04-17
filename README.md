@@ -1,5 +1,5 @@
 # 3Dnucleus_data
-A series of macros that enable efficient cropping, segmentation and analysis of nuclei within .lif files. 
+A series of macros that enable efficient cropping, segmentation and analysis of the nuclei within .lif files. 
 Capable of processing over 1000 files in 3 hours. 
 
 >_---For labs that work with nuclear (LLPS) bodies---_
