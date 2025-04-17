@@ -33,11 +33,15 @@ for (file in file_names) {
   
   # Add processed dataframe to the list
   processed_dfs[[file]] <- df
+  
+  cat("Processed:", file ,"\n")
 }
 
 # Combine all dataframes vertically (and order them)
 final_df_C <- do.call(rbind, processed_dfs)
 final_df_C <- final_df_C[order(final_df_C$nucleus), ]
+
+cat("\nAll files processed and combined into 'final_df_C'!\n")
 
 # Optional: Write the combined dataframe to a new CSV file
 # write.csv(final_df, "combined_data_C.csv", row.names = FALSE)

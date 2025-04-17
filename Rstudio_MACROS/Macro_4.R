@@ -59,10 +59,27 @@ for (i in seq_along(common_numbers)) {
 final_df_MQ <- do.call(rbind, all_merged_data)
 final_df_MQ <- final_df_MQ[order(final_df_MQ$nucleus), ]
 
-# Save the final combined dataset
-write.csv(final_df_MQ, "combined_nuc_data.csv", row.names = FALSE)
+# Calculate measurements per nucleus group
+measurements_count <- as.data.frame(table(final_df_MQ$nucleus))
+colnames(measurements_count) <- c("nucleus", "measurements")
 
-cat("\nAll files processed and combined into 'combined_nuc_data.csv'!\n")
+# Merge counts back into final_data
+final_df_MQ <- merge(final_df_MQ, measurements_count, by = "nucleus", all.x = TRUE)
+
+# Reorder columns to place 'measurements' right after 'nucleus'
+final_df_MQ <- final_df_MQ[, c("nucleus", "measurements", 
+                             setdiff(names(final_df_MQ), c("nucleus", "measurements")))]
+
+# Sort by nucleus (ascending)
+final_df_MQ <- final_df_MQ[order(final_df_MQ$nucleus), ]
+
+# Reset row names (optional)
+rownames(final_df_MQ) <- NULL
+
+cat("\nAll files processed and combined into 'final_df_MQ'!\n")
+
+# Optional: Write the combined dataframe to a new CSV file
+#write.csv(final_df_MQ, "combined_nuc_data.csv", row.names = FALSE)
 
 #---Next stage---
 

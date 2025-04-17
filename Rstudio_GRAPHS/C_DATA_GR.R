@@ -51,10 +51,11 @@ dis_graph_C12 <- ggplot(final_df_C, aes(x=nucleus, y=SurfCont.pos,  fill = Obj1)
 dis_graph_C12 + labs(x = "Ядерная оценка плотности данных, x", y = "Логарифм обьема коилин+ телец, log10(мкм^3)", title = "Сравнение распределения коилин+ телец в ядрах клеткок кумулюса", fill = "Номер Канала")
 
 #Boxplot graph for c1 and c2
-dis_graph_C12 <- ggplot(final_df_C, aes(x=1, y=SurfCont.pos,  fill = Obj1)) + 
+dis_graph_C12 <- ggplot(final_df_C, aes(x=Obj1, y=SurfCont.pos,  fill = Obj1)) + 
   geom_boxplot(alpha = 1, position = position_dodge(width = 0.8)) + 
-  theme_classic() + labs(x = "x", y = "Относительная площадь контакта, surface voxel", 
-  title = "Разница площадей контакта между Коилин+ (1) и DAPI+ (2) регионом", fill = "Номер Канала")
+  guides(fill = "none") +
+  theme_classic() + labs(x = "Channel number", y = "Relative contact surface, surface voxel", 
+  title = "Surface area contact between coilin+ (C1) and DAPI+ (C2) region")
 dis_graph_C12
 
 # Box plot

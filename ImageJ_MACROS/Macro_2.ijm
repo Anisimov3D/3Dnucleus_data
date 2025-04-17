@@ -1,11 +1,11 @@
 // ==============================================
 // MACRO II
-// to be used with MAIN MACRO
+// to be used with MAIN MACRO (or individually)
 // FUNCTION: Scans each nucleus and segments its components into individual (5) .tif files.
 // ==============================================
 
 // Set input/output directories for macro II
-inputDir_nuc = getDirectory("Choose Nucleus Input Directory");
+inputDir_nuc = getDirectory("Choose Cropped Nucleus Input Directory");
 outputDir_obj = getDirectory("Choose Segmented objects Output Directory");
 
 // Faster processing (no UI updates)

@@ -2,7 +2,7 @@
 // MACRO III
 // to be used with MAIN MACRO
 // FUNCTION: Extracts data using the group of 5 files for each nucleus (obtained by macro II)
-// IMPORTANT: This code implements WAIT commands that sum to ~ 2s. this is done because Java GUI can't keep up with rapid macro execution.
+// IMPORTANT: This code implements WAIT commands that sum to ~ 2s. this is done because Java GUI can't keep up with rapid macro execution. There are still bugs related to Java3D plugin.
 // NB! you can remove the wait commands but it increases the chance of an error!
 // ==============================================
 
@@ -12,14 +12,14 @@ setBatchMode(true);
 // ImageJ macro to process files in groups of 5 with same starting number
 macro "Process Numbered File Groups" {
     // Get directories
-    directory = getDirectory("Choose Directory Containing segmented Files");
+    inputDir_obj = getDirectory("Choose Directory Containing Segmented objects");
     outputDir_dat = getDirectory("Choose Data Output Directory");
 
     //Speed up in batch mode
     setBatchMode(true);
 
     // Get and filter files starting with numbers
-    list = getFileList(directory);
+    list = getFileList(inputDir_obj);
     filteredList = newArray(0);
     
     for (i=0; i<list.length; i++) {
@@ -55,7 +55,7 @@ macro "Process Numbered File Groups" {
         
         // When prefix changes or we have 5 files, process the group
         if (prefix != currentPrefix && fileGroup.length > 0) {
-            processFileGroup(fileGroup, directory, outputDir_dat, currentPrefix);
+            processFileGroup(fileGroup, inputDir_obj, outputDir_dat, currentPrefix);
             fileGroup = newArray(0);
             processedGroups++;
             
@@ -72,7 +72,7 @@ macro "Process Numbered File Groups" {
     
     // Process the last group if it exists
     if (fileGroup.length > 0) {
-        processFileGroup(fileGroup, directory, outputDir_dat, currentPrefix);
+        processFileGroup(fileGroup, inputDir_obj, outputDir_dat, currentPrefix);
         processedGroups++;
         // Show final progress
         print("====> PROGRESS: " + processedGroups + "/" + totalGroups + 
@@ -87,12 +87,12 @@ macro "Process Numbered File Groups" {
 }
 
 // Function to process a group of files
-function processFileGroup(fileGroup, directory, outputDir_dat, prefix) {
+function processFileGroup(fileGroup, inputDir_obj, outputDir_dat, prefix) {
     print("Processing group " + prefix + " with " + fileGroup.length + " files");
     
     // Open all files in the group
     for (i=0; i<fileGroup.length; i++) {
-        open(directory + fileGroup[i]);
+        open(inputDir_obj + fileGroup[i]);
     }
     
     // ======================= PROCESSING CODE FOR DATA EXTRACTION =======================

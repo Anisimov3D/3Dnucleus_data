@@ -1,5 +1,5 @@
 // ==============================================
-// MAIN MACRO
+// MAIN_MACRO
 // REQUIRES: "MACRO I-III"
 // FUNCTION_1: Scans input folder, Finds nuclei in each .lif file, crops them into individual .tif files.
 // FUNCTION_2: Then segments each nucleus into 3 objects.
@@ -13,75 +13,44 @@
 //
 // Features:
 // 1. Zero dialogs (almost)
-// 2. Robust error handling
+// 2. Robust error handling (almost)
 // 3. Progress logging
 // Potential improvements: Background removal from the area outsude nucleus ROI. Code cleaning.
 // 
 // NB! Visuals (3D models etc.) can be obtainded via MACRO V (implemented via near future).
 // ==============================================
 
+// Set MACRO directory
+
+inputDir_MACRO = getDirectory("Choose MACRO 1-3 Directory");
 
 // ==============================================
-// MACRO I
-// 
-// REQUIRES: "MACRO I" saved in a specific derictory (modify the code so that it finds macro I)
-// FUNCTION: Scans input folder, Finds nuclei in each .lif file, crops them into individual .tif files for further data extraction.
+// START WITH MACRO I
 // ==============================================
 
-
-// Set input/output directories for macro I
-inputDir_PIM = getDirectory("Choose PIM Input Directory");
-outputDir_nuc_cr = getDirectory("Choose Nucleus Crop Output Directory");
-
-// Faster processing (no UI updates)
 setBatchMode(true);
-
-// Get file list (filter for image files only)
-fileList1 = getFileList(inputDir_PIM);
-count = 0;
-
-// Process each file
-for (i = 0; i < fileList1.length; i++) {
-    currentFile = fileList1[i];
-    
-    // Skip non-LIF files
-    if (!endsWith(currentFile, ".lif")) continue;
-    
-    // Open LIF file silently using Bio-Formats (Change this code to open LIF files differently)
-    path1 = inputDir_PIM + currentFile;
-    run("Bio-Formats Importer", "open=[" + path1 + "] autoscale color_mode=Composite view=Hyperstack stack_order=XYCZT");
-    currentTitle = getTitle();
-    
-    // Run macro with arguments
-    pathToMacroI = "C:/Users/WORK/Desktop/MACROS/Macro_1_refined.ijm";
-    argument = outputDir_nuc_cr;
-    runMacro(pathToMacroI, argument);
-    count++;
-    
-    // Clean up (close all windows except original if needed)
-    while (nImages > 1) {
-        selectImage(nImages);
-        close();
-    }
-    if (nImages > 0) {
-        close();
-    }
-}
-
-setBatchMode(false);
-print("Successfully processed " + count + " of " + fileList1.length + " files with MACRO I.");
-
+pathToMacroI = inputDir_MACRO + "Macro_1.ijm";
+runMacro(pathToMacroI);
 
 // ==============================================
 // NEXT MACRO, MACRO II
 // ==============================================
 
 setBatchMode(true);
-pathToMacroI = "C:/Users/WORK/Desktop/MACROS/Macro_2_raw.ijm";
-runMacro(pathToMacroI, argument);
+pathToMacroII = inputDir_MACRO + "Macro_2.ijm";
+runMacro(pathToMacroII);
 
 // ==============================================
 // NEXT MACRO, MACRO III
 // ==============================================
 
+setBatchMode(true);
+pathToMacroIII= inputDir_MACRO + "Macro_3.ijm";
+runMacro(pathToMacroIII);
 
+// ==============================================
+// DONE!
+// ==============================================
+
+print("Successfuly executed MAIN_MACRO workflow!");
+print("Please set data output folder as a working directory in Rstudio.");
