@@ -58,7 +58,7 @@ __CREATE 4 folders__
 __RUN MACROS for ImageJ__
 1) OPEN FIJI (ImageJ) and execute MAIN_MACRO. Choose the corresponding directories when a specific window pops up for this. (OR execute MACRO I, MACRO II, MACRO III individually)
 
-=================> IMPORTANT! for MAIN_MACRO please specify directory of macros I,II,II <=================
+=========> IMPORTANT! for MAIN_MACRO please specify directory of macros I,II,II <=========
 
 The most Rate limiting step in this procces is MACRO III, since data extraction is a slow process, especialy co-localisation analysis.
 PROGRESS for MACRO III is monitored as a percentage value in the log window.
