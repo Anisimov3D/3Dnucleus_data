@@ -88,9 +88,13 @@ Surface are contact (surface co-localisation) difference between two regions:
 
 <img src="https://github.com/user-attachments/assets/f5153db0-7d4b-49a6-bcb9-976548e4e013" width="450">
 
+_Image 3. Boxplot graphs, that show different level of contact between DAPI and coilin+ regions._ asdf 
 
-_Image 3. Boxplot graphs, that show different level of contact between DAPI and coilin+ regions._
+Interpretation of the graph above:  
 
+![Graph_interpertation_fv](https://github.com/user-attachments/assets/9aae6a52-761d-4b52-978f-25268c73df9f)
+
+_Image 4. A demonstration of contact surface area difference between an internalised object (C1) and an external "surrounding" object (C2). A negative difference of SA between C1 and C2 (on Image 3.) implies that C1 (coilin+ region) is mostly internalised within the C2 (DAPI region)._
 
 
 
