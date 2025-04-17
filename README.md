@@ -88,7 +88,7 @@ Surface are contact (surface co-localisation) difference between two regions:
 
 <img src="https://github.com/user-attachments/assets/f5153db0-7d4b-49a6-bcb9-976548e4e013" width="450">
 
-_Image 3. Boxplot graphs, that show different level of contact between DAPI and coilin+ regions._ asdf 
+_Image 3. Boxplot graphs, that show different level of contact between DAPI and coilin+ regions._ 
 
 Interpretation of the graph above:  
 
