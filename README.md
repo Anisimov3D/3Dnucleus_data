@@ -46,7 +46,7 @@ __-THE WORKFLOW-__
 ==============================================================
 
 For macros to work, you need
-1) FIJI (ImageJ) with downloaded "3D ImageJ suite plugin" (needs additional plugins to work, read on how to download 3D suite here: ):
+1) FIJI (ImageJ) with downloaded "3D ImageJ suite plugin" (needs additional plugins to work, read on how to download 3D suite [here](https://mcib3d.frama.io/3d-suite-imagej/)):
 2) Rstudio
 
 __CREATE 4 folders__
