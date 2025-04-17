@@ -2,9 +2,9 @@
 A series of macros that enable efficient cropping, segmentation and analysis of nuclei within .lif files. 
 Capable of processing over 1000 files in 3 hours. 
 
-_---For labs that work with nuclear (LLPS) bodies---_
+>_---For labs that work with nuclear (LLPS) bodies---_
 
-_---This utility enables lab work with nuclei to be more centered around slide preparation and image acquisition---_
+>_---This utility enables lab work with nuclei to be more centered around slide preparation and image acquisition---_
 
 Currently works with two channels, where C2 should be DAPI.
 This work uses Coilin as C1, but it can used with any other nuclear protein that forms LLPS. 
@@ -60,7 +60,7 @@ __RUN MACROS for ImageJ__
 
 =========> IMPORTANT! for MAIN_MACRO please specify directory of macros I,II,III <=========
 
-The most Rate limiting step in this procces is MACRO III, since data extraction is a slow process, especialy co-localisation analysis.
+> The most Rate limiting step in this procces is MACRO III, since data extraction is a slow process, especialy co-localisation analysis.
 PROGRESS for MACRO III is monitored as a percentage value in the log window.
 
 IN the data file, you get:
