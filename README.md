@@ -10,7 +10,7 @@ Capable of processing over 1000 files in under 3 hours.
 Current macros work with TWO channels, where C2 should be DAPI. This work uses Coilin as C1, but it can used with any other nuclear protein that is involved in LLPS formation (e.g. PML). 
 
 
-__NB!__ The nucleus identification and isolation algorithm is not accurate yet. If there is non-specific hybridisation or close nuclei contact, the outside signal can be interperted as a signal inside the nucleus.
+__NB!__ The nucleus identification and isolation algorithm is not accurate yet. If there is a non-specific hybridisation signal nearby or close nuclei contact, the external signals can be interperted as a signal inside the nucleus.
 I am currently working on solving this issue using masks.
 
 __NB!__ The 3D segmentation is complicated and not fully automatic yet. It needs a configurable threshold value (currently set to 30 out of 256). Will be fixed in the future for a more scientific approach. 
