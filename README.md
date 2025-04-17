@@ -78,15 +78,15 @@ DONE! now the final dataframe in the Rstudio environment be saved, or statistica
 
 __Examles of graphs produced by current workflow:__
 
-Distribution of specific LLPS bodies (coilin+ bodies) within each nucleus by volume.
+Distribution of specific LLPS bodies (coilin+ bodies) within each nucleus by volume:
 
-<img src="https://github.com/user-attachments/assets/f2511d21-ff17-43b6-aa13-bb3a388e3bac" width="900">
+![HD_violin](https://github.com/user-attachments/assets/1611c9c1-de60-4e85-9763-a6923d29c3b8)
 
 _Image 2. Violin graphs, that show volume distribution (kernel dendity estimate) of individual coilin+ body volumes within each nucleus._
 
 Surface are contact (surface co-localisation) difference between two regions: 
 
-<img src="https://github.com/user-attachments/assets/f5153db0-7d4b-49a6-bcb9-976548e4e013" width="450">
+![Box_plot_f](https://github.com/user-attachments/assets/d82b193c-7b09-4a14-beda-7b9db3d97600)
 
 _Image 3. Boxplot graphs, that show different level of contact between DAPI and coilin+ regions._ 
 
