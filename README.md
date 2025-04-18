@@ -64,6 +64,7 @@ __CREATE 4 folders__
 4) DATA folder (e.g., "nuc_rawdata") for "raw" data obtained by MACRO III <=== SET THIS AS WORKING DIRECTORY IN Rstudio
 
 __RUN MACROS for ImageJ__
+
 A) OPEN FIJI (ImageJ) and execute MAIN_MACRO that goes through MACRO I-III. Choose the corresponding directories when a specific window pops up for this.
 
 B) (OR execute MACRO I, MACRO II, MACRO III separately)
