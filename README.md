@@ -50,8 +50,11 @@ For macros to work, you need
 2) Rstudio
 
 __DOWNLOAD MACROS__
+
 Download MAIN_MACRO
+
 Move ImageJ_MACROS to a designated directory, so that it can be chosen for MAIN_MACRO.
+
 Additionally, download Rstudio_MACROS and Rstudio_GRAPHS for cleaning the acquired data and using it to make graphs.
 
 __CREATE 4 folders__
@@ -62,6 +65,7 @@ __CREATE 4 folders__
 
 __RUN MACROS for ImageJ__
 A) OPEN FIJI (ImageJ) and execute MAIN_MACRO that goes through MACRO I-III. Choose the corresponding directories when a specific window pops up for this.
+
 B) (OR execute MACRO I, MACRO II, MACRO III separately)
 
 > The most Rate limiting step in this proccess is MACRO III, since data extraction is a slow process, especially the co-localisation analysis. There are a lot of bugs regarding Java3d, but from my experience - it does not impact the quality of the acquired data.
