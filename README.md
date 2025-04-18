@@ -34,10 +34,10 @@ Top right corner: primary unmodified image.
 Bottom right corner: Segmented and analysed objects:_ $${\color{blue}nucleus \space \color{blue}"shape", \space \color{red}DAPI, \space \color{green}coilin }$$ _(or any other channel 1)._
 
 The code obtains following data:
-1) Number of nucleus (can be modified regarding the number of starting nucleus)
+1) Number of the nucleus (can be modified regarding the number of starting nucleus)
 2) Number of "measurements" or bodies within the nucleus (e.g. number of colilin+ bodies)
 3) Intensity, volume of each identified nuclear body (or "measurement")
-4) Percentage co-localisation and surface co-localisation data between regions corresponding to channel 1 and 2(DAPI).
+4) Percentage co-localisation and surface co-localisation data between the regions corresponding to channel 1 and 2(DAPI).
 
 ==============================================================
 
