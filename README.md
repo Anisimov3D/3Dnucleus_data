@@ -49,6 +49,11 @@ For macros to work, you need
 1) FIJI (ImageJ) with downloaded "3D ImageJ suite plugin" (needs additional plugins to work, read on how to download 3D suite [here](https://mcib3d.frama.io/3d-suite-imagej/)):
 2) Rstudio
 
+__DOWNLOAD MACROS__
+Download MAIN_MACRO
+Move ImageJ_MACROS to a designated directory, so that it can be chosen for MAIN_MACRO.
+Additionaly, download Rstudio_MACROS and Rstudio_GRAPHS for cleaning the aquired data and using it to make graphs.
+
 __CREATE 4 folders__
 1) Primary image folder (e.g., "PIM") for primary input of .lif files <==== PUT YOUR .lif FILES FOR PROCESSING HERE
 2) Cropped nuclei folder (e.g., "nuc_cr") for individual, numbered nuclei (.tif) obtained by MACRO I
@@ -56,21 +61,24 @@ __CREATE 4 folders__
 4) DATA folder (e.g., "nuc_remdata") for "raw" data obtained by MACRO III <=== SET THIS AS WORKING DIRECTORY IN Rstudio
 
 __RUN MACROS for ImageJ__
-1) OPEN FIJI (ImageJ) and execute MAIN_MACRO. Choose the corresponding directories when a specific window pops up for this. (OR execute MACRO I, MACRO II, MACRO III separately)
+A) OPEN FIJI (ImageJ) and execute MAIN_MACRO that goes through MACRO I-III. Choose the corresponding directories when a specific window pops up for this.
+B) (OR execute MACRO I, MACRO II, MACRO III separately)
 
-=========> IMPORTANT! for MAIN_MACRO please specify directory of macros I,II,III <=========
+> The most Rate limiting step in this procces is MACRO III, since data extraction is a slow process, especialy co-localisation analysis. There are a lot of bugs regarding Java3d, but from my experience - it does not impact the quality of the aquired data.
 
-> The most Rate limiting step in this procces is MACRO III, since data extraction is a slow process, especialy co-localisation analysis.
-PROGRESS for MACRO III is monitored as a percentage value in the log window.
+ALL PROGRESS for MACRO I-III is monitored in the log window.
 
-IN the data file, you get:
+IN the data output folder, you get:
 1) M_n.csv files (Measurements of volume and surface area)
 2) Q_n.csv files (Quanittative analysis of signal intensity)
 3) C_n.csv files (Surface and Volume_Percentage Co-localisation analysis)
 
 __RUN MACROS for Rstudio:__
+OPEN Rstudio
 
-OPEN Rstudio and execute (control+shift+S):
+Set the data output file as Rstudio working directory
+
+Execute (control+shift+S):
 1) MACRO IV for cleaning and merging M and Q data (results in final_of_MQ)
 2) MACRO V for cleaning C data (results in final_of_C)
 
