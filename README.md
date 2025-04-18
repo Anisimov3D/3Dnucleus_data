@@ -95,13 +95,13 @@ Distribution of specific LLPS bodies (coilin+ bodies) within each nucleus by vol
 
 ![HD_violin](https://github.com/user-attachments/assets/1611c9c1-de60-4e85-9763-a6923d29c3b8)
 
-_Image 2. Violin graphs, that show volume distribution (kernel density estimate) of individual coilin+ body volumes within each nucleus._
+_Image 2. Volume distribution (kernel density estimate) of individual coilin+ body volumes within each nucleus. Violin graphs, Rstudio._
 
 Surface are contact (surface co-localisation) difference between two regions: 
 
 ![Box_plot_f](https://github.com/user-attachments/assets/d82b193c-7b09-4a14-beda-7b9db3d97600)
 
-_Image 3. Boxplot graphs, that show different level of contact between DAPI and coilin+ regions._ 
+_Image 3. Different level of contact between DAPI and coilin+ regions. Boxplot graph, Rstudio._ 
 
 Interpretation of the graph above:  
 
