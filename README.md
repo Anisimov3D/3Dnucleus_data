@@ -74,9 +74,9 @@ B) (OR execute MACRO I, MACRO II, MACRO III separately)
 ALL PROGRESS for MACRO I-III is monitored in the log window.
 
 IN the data output folder, you get:
-1) M_n.csv files (Measurements of volume and surface area)
-2) Q_n.csv files (Quanitative analysis of signal intensity)
-3) C_n.csv files (Surface and Volume_Percentage Co-localisation analysis)
+1) M_n.csv files (Measurements of volume (um^3) and surface area (um^2) of each LLPS body)
+2) Q_n.csv files (Quanitative analysis of signal intensity of each LLPS body (mean grey value))
+3) C_n.csv files (Surface (surface voxel) and Volume (percentage) Co-localisation analysis)
 
 __RUN MACROS for Rstudio:__
 OPEN Rstudio
