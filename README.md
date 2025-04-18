@@ -10,7 +10,7 @@ Capable of processing over 1000 files in under 3 hours.
 Current macros work with TWO channels, where C2 should be DAPI. This work uses Coilin as C1, but it can used with any other nuclear protein that is involved in LLPS formation (e.g. PML). 
 
 
-__NB!__ The nucleus identification and isolation algorithm is not accurate yet. If there is a non-specific hybridisation signal nearby or overlaping of nuclei, the external signals can be interperted as a signal inside the nucleus.
+__NB!__ The nucleus identification and isolation algorithm is not accurate yet. If there is a non-specific hybridisation signal nearby or overlapping of nuclei, the external signals can be interpreted as a signal inside the nucleus.
 I am currently working on solving this issue using masks.
 
 __NB!__ The 3D segmentation is complicated and not fully automatic yet. It needs a configurable threshold value (currently set to 30 out of 256). Will be fixed in the future for a more scientific approach. 
@@ -25,7 +25,7 @@ Current workflow is divided by:
 2) Rstudio macros (located in Rstudio_MACROS) for data cleaning and polishing
 3) Rstudio graphs (located in Rstudio_GRAPHS) for complimentary statistical analysis and graphical interpretation of acquired data
 
-Simple, schematic interpertation of the workflow:
+Simple, schematic interpretation of the workflow:
 
 <img src="https://github.com/user-attachments/assets/644c2e43-ca8e-4f0a-8952-e350a90367f8" width="473">
 
@@ -52,7 +52,7 @@ For macros to work, you need
 __DOWNLOAD MACROS__
 Download MAIN_MACRO
 Move ImageJ_MACROS to a designated directory, so that it can be chosen for MAIN_MACRO.
-Additionaly, download Rstudio_MACROS and Rstudio_GRAPHS for cleaning the aquired data and using it to make graphs.
+Additionally, download Rstudio_MACROS and Rstudio_GRAPHS for cleaning the acquired data and using it to make graphs.
 
 __CREATE 4 folders__
 1) Primary image folder (e.g., "PIM") for primary input of .lif files <==== PUT YOUR .lif FILES FOR PROCESSING HERE
@@ -64,13 +64,13 @@ __RUN MACROS for ImageJ__
 A) OPEN FIJI (ImageJ) and execute MAIN_MACRO that goes through MACRO I-III. Choose the corresponding directories when a specific window pops up for this.
 B) (OR execute MACRO I, MACRO II, MACRO III separately)
 
-> The most Rate limiting step in this procces is MACRO III, since data extraction is a slow process, especialy co-localisation analysis. There are a lot of bugs regarding Java3d, but from my experience - it does not impact the quality of the aquired data.
+> The most Rate limiting step in this proccess is MACRO III, since data extraction is a slow process, especially the co-localisation analysis. There are a lot of bugs regarding Java3d, but from my experience - it does not impact the quality of the acquired data.
 
 ALL PROGRESS for MACRO I-III is monitored in the log window.
 
 IN the data output folder, you get:
 1) M_n.csv files (Measurements of volume and surface area)
-2) Q_n.csv files (Quanittative analysis of signal intensity)
+2) Q_n.csv files (Quanitative analysis of signal intensity)
 3) C_n.csv files (Surface and Volume_Percentage Co-localisation analysis)
 
 __RUN MACROS for Rstudio:__
@@ -82,9 +82,9 @@ Execute (control+shift+S):
 1) MACRO IV for cleaning and merging M and Q data (results in final_of_MQ)
 2) MACRO V for cleaning C data (results in final_of_C)
 
-DONE! now the final dataframe in the Rstudio environment be saved, or statistically analysied using the corresponding macros in "Rstudio_GRAPHS" folder.
+DONE! now the final dataframe in the Rstudio environment be saved, or statistically analysed using the corresponding macros in "Rstudio_GRAPHS" folder.
 
-__Examles of graphs produced by current workflow:__
+__Examples of graphs produced by current workflow:__
 
 Distribution of specific LLPS bodies (coilin+ bodies) within each nucleus by volume:
 
