@@ -29,7 +29,7 @@ Simple, schematic interpretation of the workflow:
 
 <img src="https://github.com/user-attachments/assets/644c2e43-ca8e-4f0a-8952-e350a90367f8" width="473">
 
-_Image 1. Left side: MAIN_MACRO workflow, that currently produces data 2 (Co-locolisation, C) and data 3 (Volume and intensity, M+Q).
+_Image 1. Left side: MAIN_MACRO workflow, that currently produces data 2 (Co-localisation, C) and data 3 (Volume and intensity, M+Q).
 Top right corner: primary unmodified image. 
 Bottom right corner: Segmented and analysed objects:_ $${\color{blue}nucleus \space \color{blue}"shape", \space \color{red}DAPI, \space \color{green}coilin }$$ _(or any other channel 1)._
 
@@ -58,7 +58,7 @@ __CREATE 4 folders__
 1) Primary image folder (e.g., "PIM") for primary input of .lif files <==== PUT YOUR .lif FILES FOR PROCESSING HERE
 2) Cropped nuclei folder (e.g., "nuc_cr") for individual, numbered nuclei (.tif) obtained by MACRO I
 3) Segmented objects folder (e.g., "nuc_cr") for segmented objects obtained by MACRO II
-4) DATA folder (e.g., "nuc_remdata") for "raw" data obtained by MACRO III <=== SET THIS AS WORKING DIRECTORY IN Rstudio
+4) DATA folder (e.g., "nuc_rawdata") for "raw" data obtained by MACRO III <=== SET THIS AS WORKING DIRECTORY IN Rstudio
 
 __RUN MACROS for ImageJ__
 A) OPEN FIJI (ImageJ) and execute MAIN_MACRO that goes through MACRO I-III. Choose the corresponding directories when a specific window pops up for this.
