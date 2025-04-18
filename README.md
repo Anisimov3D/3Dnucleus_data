@@ -107,7 +107,7 @@ Interpretation of the graph above:
 
 ![Graph_interpertation_wh](https://github.com/user-attachments/assets/72e6e0b4-862f-4a47-9582-9cff67691a76)
 
-_Image 4. A demonstration of contact surface area difference between an internalised object (C1) and an external "surrounding" object (C2). A negative difference of SA between C1 and C2 (on Image 3.) implies that C1 (coilin+ region) is mostly internalised within the C2 (DAPI region)._
+_Image 4. A demonstration of contact surface area difference between an internalised object (C1) and an external "surrounding" object (C2). A negative difference of surface area between C1 and C2 (on Image 3.) implies that C1 (coilin+ region) is mostly internalised within the C2 (DAPI region)._
 
 
 
