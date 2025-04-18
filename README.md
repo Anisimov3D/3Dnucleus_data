@@ -76,7 +76,7 @@ IN the data output folder, you get:
 __RUN MACROS for Rstudio:__
 OPEN Rstudio
 
-Set the data output file as Rstudio working directory
+(Make sure that the data output file is set as Rstudio working directory)
 
 Execute (control+shift+S):
 1) MACRO IV for cleaning and merging M and Q data (results in final_of_MQ)
