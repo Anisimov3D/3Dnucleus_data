@@ -39,17 +39,15 @@ The code obtains following data:
 3) Intensity, volume of each identified nuclear body (or "measurement")
 4) Percentage co-localisation and surface co-localisation data between the regions corresponding to channel 1 and 2(DAPI).
 
-==============================================================
-
-__-THE WORKFLOW-__
-
-==============================================================
+## The Workflow
 
 For macros to work, you need
 1) FIJI (ImageJ) with downloaded "3D ImageJ suite plugin" (needs additional plugins to work, read on how to install 3D suite plugin [here](https://mcib3d.frama.io/3d-suite-imagej/)):
 2) Rstudio
 
-__DOWNLOAD MACROS__
+Then, follow theese 4 simple steps:
+
+### 1. Download macros
 
 Download MAIN_MACRO
 
@@ -57,13 +55,13 @@ Move ImageJ_MACROS to a designated directory, so that it can be chosen for MAIN_
 
 Additionally, download Rstudio_MACROS and Rstudio_GRAPHS for cleaning the acquired data and using it to make graphs.
 
-__CREATE 4 folders__
+### 2. Create 4 folders
 1) Primary image folder (e.g., "PIM") for primary input of .lif files <==== PUT YOUR .lif FILES FOR PROCESSING HERE
 2) Cropped nuclei folder (e.g., "nuc_cr") for individual, numbered nuclei (.tif) obtained by MACRO I
 3) Segmented objects folder (e.g., "nuc_cr") for segmented objects obtained by MACRO II
 4) DATA folder (e.g., "nuc_rawdata") for "raw" data obtained by MACRO III <=== SET THIS AS WORKING DIRECTORY IN Rstudio
 
-__RUN MACROS for ImageJ__
+### 3. Run macros for ImageJ
 
 A) OPEN FIJI (ImageJ) and execute MAIN_MACRO that goes through MACRO I-III. Choose the corresponding directories when a specific window pops up for this.
 
@@ -78,7 +76,7 @@ IN the data output folder, you get:
 2) Q_n.csv files (Quanitative analysis of signal intensity of each LLPS body (mean grey value))
 3) C_n.csv files (Surface (surface voxel) and Volume (percentage) Co-localisation analysis)
 
-__RUN MACROS for Rstudio:__
+### 4. Run macros for Rstudio
 OPEN Rstudio
 
 (Make sure that the data output file is set as Rstudio working directory)
@@ -89,7 +87,7 @@ Execute (control+shift+S):
 
 DONE! now the final dataframe in the Rstudio environment be saved, or statistically analysed using the corresponding macros in "Rstudio_GRAPHS" folder.
 
-__Examples of graphs produced by current workflow:__
+## Current Workflow Graph Examples
 
 Distribution of specific LLPS bodies (coilin+ bodies) within each nucleus by volume:
 
