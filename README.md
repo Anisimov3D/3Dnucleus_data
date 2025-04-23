@@ -91,7 +91,7 @@ DONE! now the final dataframe in the Rstudio environment be saved, or statistica
 
 Distribution of specific LLPS bodies (coilin+ bodies) within each nucleus by volume:
 
-![HD_violin](https://github.com/user-attachments/assets/1611c9c1-de60-4e85-9763-a6923d29c3b8)
+![Violin](https://github.com/user-attachments/assets/57df1b9e-fc6e-4232-96b2-21a0fbb34600)
 
 _Image 2. Volume distribution (kernel density estimate) of individual coilin+ body volumes within each nucleus. Violin graphs, Rstudio._
 
